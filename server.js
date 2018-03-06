@@ -24,7 +24,7 @@ app.get('/article-one',function(req,res)
 });
 
 app.get('/main.js',function(req,res)
-{ res.send('Main.js loaded');
+{ res.sendFile(path.join(_dirname,'ui','main.js'));
     
 });
 
